@@ -5,7 +5,7 @@ const PORT = 3003;
 
 const server = http.createServer((request, response) => {
   const url = new URL(request.url, "http://127.0.0.1");
-  const userName = url.searchParams.get("name");
+  const userName = url.searchParams.get("hello");
 
   if (userName) {
     response.status = 200;
